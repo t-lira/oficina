@@ -8,9 +8,10 @@
   <link rel="shortcut icon" href="assets/icons/icons8-carro-16.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/js/bootstrap.min.js">
 </head>
 <body class="">
-  <header class="shadow-sm header bg-white">
+  <header class="shadow-sm header bg-white position-absolute w-100">
     <div class="container"> 
       <div class="row">
         <div class="col-2">
@@ -28,7 +29,7 @@
           <div class="d-none d-md-block">
             <nav class="nav justify-content-end pt-3">
               <a href="index.html" class="nav-link text-black">Home</a>
-              <a href="#histoty" class="nav-link text-black">Quem Somos</a>
+              <a href="#section-histoty" class="nav-link text-black">Quem Somos</a>
               <a href="#section-content" class="nav-link text-black">Serviços<a>              
               <a href="#location" class="nav-link text-black">Localização</a>
              
@@ -45,7 +46,7 @@
           <div class="collapse" id="navbar-mobile">
             <nav class="nav flex-column justify-content-end">
               <a href="index.html" class="nav-link text-black">Home</a>
-              <a href="#histoty" class="nav-link text-black">Quem Somos</a>
+              <a href="#section-histoty" class="nav-link text-black">Quem Somos</a>
               <a href="#section-content" class="nav-link text-black">Serviços<a>              
               <a href="#location" class="nav-link text-black">Localização</a>
 
@@ -64,24 +65,14 @@
    </header>
 
   <main class="main">
-    <section class="banner">
-      <div class="container">
-        <div class="row">
-
-        </div>
-      </div>
-    </section>
-
-    <section class="histoty" id="histoty">
-      <div class="container mt-5 mb-5">
+    <section class="section-histoty" id="histoty">
+      <div class="container p-md-5">
         <div class="row d-flex align-items-center justify-content-between">
-          <div class="col-sm-1 col-md-6 text-center "> 
-            <p class="h2">Bem-vindo ao</p>
-            <p class="display-6 text-primary">Auto Center L.D.J</p>
-            <img src="assets/images/" alt="auto center" class="">
+          <div class="col-sm-1 col-md-6"> 
+            <img src="assets/images/logoazul.svg" alt="auto center" class="">
           </div>
           <div class="col-sm-1 col-md-5 p-3">
-            <h2 class="text-primary mb-4">Quem Somos</h2>
+            <h2 class="text-primary mb-4 fw-bold">Quem Somos</h2>
             <p>
               O Auto Center L.D.J é um Centro Automotivo especializado em mecânica geral, localizada no bairro Cidade Nova São Miguel – São Paulo.</p>
             <p>
@@ -99,7 +90,7 @@
       <div class="container mt-5 mb-5">
         <div class="row">
           <div class="col-sm-1 col-md-12 mb-4">
-            <h4 class="text-primary display-6 text-center">conheça nossos serviços</h4> 
+            <p class="text-primary h3 text-center fw-bold">Conheça alguns de nossos serviços</p> 
           </div>
           <div class="col-sm-1 col-md-3 mb-3">
             <div class="card d-flex align-items-center">
@@ -107,6 +98,10 @@
               <div class="card-body">
                 <h5 class="card-title text-primary">
                   Cambagem
+
+                  O motorista consciente entende que a revisão é tão importante quanto usar o cinto de segurança no carro. Ela deve ser feita a cada 3 meses ou 10.000km.
+
+
                 </h5>
               </div>
             </div> 
@@ -148,8 +143,50 @@
       </div>
      </section>
 
-    <section id="location" class="location">
-      <div class="container mt-5 mb-5">
+     <section class="banner">
+      <div class="container">
+        <div class="row">
+          <p>
+            Trabalhamos com todas as montadoras e modelos de automóveis, nacionais e importados.
+          </p>
+
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <!--Início indicadores para navegar nos slides do carrosel-->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <section id="section-location" class="section-location">
+      <div class="container p-md-5">
         <div class="row d-flex justify-content-between">
           <div class="col-sm-1 col-md-3">
             <p class="text-primary h5 mb-3 mt-5 ">
@@ -182,6 +219,54 @@
           <div class="col-sm-1 col-md-7">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14635.150826348163!2d-46.4340403!3d-23.5041549!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce63e47063d2d7%3A0x313a55743e35f03e!2sAuto%20Center%20L.D.J!5e0!3m2!1spt-BR!2sbr!4v1692906506023!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="image-map"></iframe>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-form">
+      <div class="container mb-5 mt-5">
+        <div class="row">
+          <p class="h1 text-primary text-center fw-bold"> 
+            Entre em contato
+          </p>
+
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="first-name" class="form-label">
+                Nome:
+              </label>
+              <input type="text" class="form-control" id="first-name" placeholder="Primeiro nome">
+            </div>
+            <div class="col-md-6">
+              <label for="second-name" class="form-label">
+                Sobrenome:
+              </label>
+              <input type="text" class="form-control" id="second-name" placeholder="Sobrenome">
+            </div>
+            <div class="col-md-6">
+              <label for="email-contact" class="form-label">
+                Email:
+              </label>
+              <input type="email" class="form-control" id="email-contact" placeholder="Email">
+            </div>
+            <div class="col-md-6">
+              <label for="phone-contact" class="form-label">
+                Telefone:
+              </label>
+              <input type="email" class="form-control" id="iphone-contact" placeholder="Telefone">
+            </div>
+            <div class="col-md-12">
+              <label for="phone-contact" class="form-label" id="message">
+                Mensagem:
+              </label>
+              <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary float-end">
+                Enviar
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
