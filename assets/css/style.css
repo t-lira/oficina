@@ -37,6 +37,7 @@ Fonts
   margin: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+
 }
 
 /* 
@@ -45,9 +46,11 @@ Global Settings
 ---------------------
 */
 
-body{
-  overflow-x: hidden;
+html, body, main{
+ overflow-x: hidden;
+
 }
+
 
 a{
   text-decoration: none;
@@ -93,7 +96,7 @@ background-color: var(--tertiary-color);
 
 #header .nav-link{
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 1.3em;
 }
 
 #header .nav-link:hover{
@@ -121,7 +124,7 @@ section-first
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3rem 0 0 0;
+  padding: 3rem 1rem 0 1rem;
 }
 
 #section-first .s-first--box-image{
@@ -180,7 +183,7 @@ section-about
 }
 
 .s-about--box-text .section-about--title{
-  font-size: 2rem;
+  font-size: 2em;
   font-weight: 900;
   margin-bottom: 1.5rem;
   color: var(--primary-color);
@@ -201,7 +204,7 @@ margin-bottom: 2rem;
 /* Large ≥ 992px */
 @media screen and (min-width:78rem) {
   .s-about--box-text  .section-about--title{
-    font-size: 2.5rem;
+    font-size: 2.5em;
   }
 }
 /*
@@ -226,7 +229,7 @@ section-services
 
 #container-image .c-image--title{
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 2rem;
+  font-size: 2em;
   color: #fff;
   font-weight: 900;
   letter-spacing: 0.2em;
@@ -239,7 +242,7 @@ section-services
 }
 
 #section-services .s-services--title{
-  font-size: 1.5rem;
+  font-size: 1.5em;
   text-align: center;
   font-weight: 900;
   color: var(--primary-color);
@@ -271,7 +274,7 @@ section-services
 .s-services--box-list  .check .fa-check{
   color: #fff;
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 
 /* Medium ≥ 768px */
@@ -289,7 +292,7 @@ section-services
 /* Large ≥ 992px */
 @media screen and (min-width:78rem) {
    #container-image .c-image--title{
-    font-size: 3rem;
+    font-size: 3em;
   }
 
   #section-services{
@@ -311,7 +314,7 @@ section-btn
 #section-btn{
   background-color: var(--tertiary-color);
   color: #fff;
-  padding: 0 0 1rem 0;
+  padding: 1rem;
 }
 
 #section-btn .section-btn--title{
@@ -355,6 +358,7 @@ section depoimentos
 
 #s-depoimentos--text{
   margin-bottom: 5rem;
+  padding-left: 1rem;
 }
 
 #s-depoimentos--text .depoimentos--title{
@@ -377,10 +381,10 @@ font-size: 1.5em;
 #s-depoimentos--container .s-depoimentos--box{
   background-color: #dfdfdf;
   height: 13rem;
-  width: 100%;
+  width: 90%;
   padding-top: 3rem;
   position: relative;
-  margin-bottom: 3rem;
+  margin: 3rem auto;
 }
 
 #s-depoimentos--container .fa-star{
@@ -394,13 +398,13 @@ font-size: 1.5em;
   background-color: var(--primary-color);
   border-radius: 6rem;
   position: absolute;
-  left: 40%;
+  left: 37%;
   top: -20%;
 }
 
 #s-depoimentos--container .s-depoimentos--img{
   position: absolute;
-  left: 53%;
+  left: 50%;
   top: 52%;
   background-color: #fff;
   border-radius: 1rem;
@@ -424,7 +428,12 @@ margin-bottom: 0.5rem;
 /* -------- Large ≥ 992px -------- */
 @media screen and (min-width:78rem) { 
   #s-depoimentos--container{
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr); 
+  }
+
+  #s-depoimentos--container .s-depoimentos--image{
+    left: 40%;
+    top: -20%;
   }
 }
 
@@ -439,6 +448,7 @@ bottom
 
 #bottom .bottom--box{
   margin-top: 1rem;
+  padding-left: 2rem;
 }
 
 #bottom .bottom--img{
@@ -459,6 +469,7 @@ width: 10rem;
 #credit-card{
   background-color: var(--tertiary-color);
   padding: 1rem;
+
 }
 
 .credit-card--text,.credit-card--title{
@@ -477,7 +488,7 @@ width: 10rem;
 }
 
 #credit-card .credit-card--image{
-  width: 18rem;
+  width: 18em;
 }
 
 /* Large ≥ 992px */
@@ -486,8 +497,12 @@ width: 10rem;
     padding: 2rem;
   }
 
+  #bottom .bottom--box{
+    padding-left: 0rem;
+  }
+  
   #credit-card .credit-card--text{
-    font-size: 1.8rem;
+    font-size: 1.8em;
   }
 
   #credit-card .credit-card--title{
@@ -495,7 +510,7 @@ width: 10rem;
   }
   
   #credit-card .credit-card--image{
-    width: 20rem;
+    width: 18rem;
   }
 }
 
@@ -511,7 +526,7 @@ Footer
 }
 
 #footer .footer--text{
-  font-size: 1.1rem;
+  font-size: 1.1em;
   color: #dfdfdf;
   padding: 0;
   margin: 0;
